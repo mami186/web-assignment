@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery with Uniform Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px; /* Set a consistent width */
+            height: 300px; /* Set a consistent height */
+            object-fit: cover; /* Ensure images fit nicely without distortion */
+            margin: 10px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+    </style>
+</head>
+<body>
+    <p>Click the first cat to learn more about cats</p>
+    <div class="gallery">
+        <img src="cat.jpg" alt="this is a cat image" onclick="openLink('https://en.wikipedia.org/wiki/Cat')">
+        <img src="giphy.webp" alt="owwwwww cat">
+        <img src="roaling cat.webp" alt="roaling cat">
+        <img src="giphy2.webp" alt="Ahh cat">
+        <img src="200w.gif" alt="Ahh cat">
+        <img src="200.webp" alt="koala staring">
+    </div>
+    <script>
+        function openLink(url) {
+            window.open(url, '_blank'); // Open the link in a new tab
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* Reset body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header section styling */
+.header-part {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    background-color: rgb(111, 112, 116); /* Blue for the header */
+    padding: 0 20px;
+    align-items: center;
+    color: white;
+}
+
+.home-div, .div-log-in, .div-sign-up {
+    flex: 1;
+    text-align: center;
+}
+
+.home-button, .log-in-button, .sign-up-button {
+    background-color: rgb(111, 112, 116); /* Grey color */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.home-button:hover, .log-in-button:hover, .sign-up-button:hover {
+    background-color: rgb(21, 21, 21); /* Darker grey */
+    transform: scale(1.1); /* Subtle animation */
+}
+
+.div-search {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    flex: 1;
+    max-width: 400px;
+    margin-right: 10px;
+}
+
+.Search-icon {
+    width: 30px;
+}
+
+/* Middle section styling */
+.middle-section-div {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(245, 245, 245); /* Light grey for middle */
+}
+
+.first-mid-sec {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-button, .story-button, .form-button {
+    background-color: rgb(111, 112, 116); /* Green buttons */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.gallery-button:hover, .story-button:hover, .form-button:hover {
+    background-color: rgb(33, 33, 33); /* Dark green hover effect */
+    transform: scale(1.1);
+}
+
+/* Main iframe adjustment */
+.second-mid-sec iframe {
+    border: none;
+    border-radius: 10px;
+    width: 1420px;
+    height: 570px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgb(33, 33, 33); /* Dark grey for footer */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

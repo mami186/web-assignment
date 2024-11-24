@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .story-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6f7074;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #212121;
+        }
+        iframe {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            width: 80%;
+            height: 400px;
+            display: none;
+        }
+    </style>
+    <script>
+        function showIframe() {
+            const iframe = document.getElementById('learnMoreIframe');
+            iframe.src = "https://en.wikipedia.org/wiki/Debugging/"; // Replace with a relevant link
+            iframe.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="story-container">
+        <p>
+            Sam, a software developer, was stuck on a bug that made his app crash right before a big demo. 
+            Hours of debugging led nowhere, and frustration was mounting. Just as he was about to give up, 
+            he noticed a single misplaced semicolon in the code—a tiny oversight causing the entire issue. 
+            Fixing it, the app ran flawlessly.
+        </p>
+        <p>
+            Relieved, Sam leaned back with a smile. "Sometimes, it's the smallest things," he thought, 
+            appreciating how even in coding, life’s greatest problems often have simple solutions.
+        </p>
+        <button onclick="showIframe()">Learn More About Debugging</button>
+    </div>
+    <iframe id="learnMoreIframe"></iframe>
+</body>
+</html>
